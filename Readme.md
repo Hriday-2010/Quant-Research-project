@@ -180,27 +180,7 @@ This paper investigates how order flow imbalances (OFI) affect price movements i
 
 ---
 
-## **4. How to Use This for Your Task**
-
-### **4.1 If Your Task Involves Price Impact Modeling**
-- Use **integrated OFI** (PCA-weighted) instead of best-level OFI for better accuracy.
-- Ignore cross-impact terms unless working with portfolios or sector-specific strategies.
-
-### **4.2 If Your Task Involves Forecasting**
-- Incorporate **lagged cross-asset OFIs** for short-term predictions (1-5 minutes).
-- Focus on high-volume stocks (e.g., AAPL, MSFT) as they lead others.
-
-### **4.3 If Your Task Involves Network Analysis**
-- Construct a **cross-impact matrix** using LASSO to identify key influencers.
-- Visualize sector-based linkages (e.g., tech stocks cluster together).
-
-### **4.4 If Your Task Requires Robustness Checks**
-- Test different aggregation methods (PCA vs. simple average).
-- Vary the time horizon to see when predictability decays.
-
----
-
-## **5. Summary**
+## **4. Summary**
 - **Best for Contemporaneous Impact**: Integrated OFI (PCA-based).
 - **Best for Predictive Modeling**: Cross-asset OFI (short-term only).
 - **Best for Portfolio Analysis**: Include cross-impact terms.
